@@ -45,7 +45,7 @@
 \degree    {MS}              % MS, MA, MCTP, or PhD
 \graduation{May}{2018}    % May, August, or December 
 
-\title     {A Proposal for a Parameratized Circulating Vector Field Guidance for Fixed Wing Unmanned Aerial Vehicles}
+\title     {A Proposal for a Parameterized Circulating Vector Field Guidance for Fixed Wing Unmanned Aerial Vehicles}
 \author    {Garrett S.}{Clem} 
 
 \advisor   {Dr. Jay Wilhelm}{Assistant Professor}
@@ -108,7 +108,7 @@
 % Its not uncommon for a simplified vehicle to be used (Dubins, simple constraints, etc)
 %	[Chen, Chang, Agate 2009]
 %	[Liang, Jia 2017]
-%	
+%	[Nelson, Barber, 2005]
 %
 %
 % Vector Normalization
@@ -124,10 +124,10 @@
 %
 %
 %
-%
-% 
-%
-%
+% Vector field is an attractive guidance method for several reasons
+% 	Account for wind disturbance
+%	Vehicle will have continuous guidance
+%	A single field can provide guidance for many initial conditions
 %
 %
 %
@@ -145,16 +145,18 @@
 %
 %
 %
-%
-%
-%
-%
-%
 %%%% ---------------------------------------------------------------------------%
+
+%Remove most references to multirotor technology, acknowledge its existience and move on
 
 
 \chapter{Introduction}
+
+Unmanned Aerial Vehicles (UAVs) can be used for a multitude of complex tasks such as surveillance, reconnaissance, aerial photography, delivery, and for defense. Accomplishing these tasks require robust and fast execution of three distinct subsystems consisting of navigation, guidance, and control. 
 \section{Motivation and Problem Statement}
+
+%UAVs commercially available, ease of use, inexpensive, open source community, wells supported
+
 \section{Methods Overview}
 \section{Phases}
 \section{Summary of Objectives}
@@ -166,23 +168,67 @@
 \item Simulate and compare the parametrized circulation with a non parametrized VF guidance for circular and elliptical obstacles
 
 \item Emulate fixed wing algorithm with a ground robot to validate simulation results and demonstrate real time VF guidance is achievable with parametrized circulation modification
+
+
 \end{itemize}
+
+
 
 
 \chapter{Literature Review}
 \section{Unmanned Aerial Vehicles}
+
+In literature, UAVs generally occupy one of two categories consisting of fixed wing aircraft and multi-rotor aircraft. Fixed wing aircraft can carry a large payload and are ideal for long endurance missions, whereas multi-rotor aircraft are used when hovering or high maneuverability is desired. Both categories of vehicles require navigation, guidance, and control to maintain flight and accomplish their task. These processes are often automated and programmed into flight controllers that are placed on-board the aircraft itself. 
+
+
 \subsection{Navigation, Guidance, and Control}
-\begin{itemize}
-\item Navigation
-\item Guidance
-\item Path Planning
-\item Control
-\end{itemize}
+
+Before commanding a vehicle to a given task it is paramount that the location of a vehicle with respect to some reference point is known. Measuring, filtering, and estimating the location of a vehicle generally falls under the study of navigation. Commanding a vehicles heading and general operation is provided by a guidance system. Maintaining vehicle stability and reducing any errors is the responsibility of a control system. 
+
+\subsection{Navigation}
+Sensor packages containing GPS receivers, barometers, and compasses measure the location and heading of a vehicle. Data is always subject to uncertainty caused by process and measurement noise. Filtering measurements with Kalman filters produce estimates that more accurately represent the location and heading.
+
+\subsection{Guidance}
+
+\subsection{Control}
+
+
 
 \subsection{Flight Mechanics}
+
+- Lift
+- Thrust
+- Drag
+
+- Kinematics
+	- Dubins equations of motion
+- Dynamics
+	- Need more literature
+- Control
+	- Brief description of feedback control 
 \subsection{Autopilot}
+
+Autopilots are responsible for maintaining vehicle stability while carrying out mission objectives such as waypoint navigation and loitering. Vehicle stability is achieved by controlling the UAVs actuators through feedback control methods. 
+
+
+
+- Hardware and software packages \\
+- Collect and filter sensor data \\
+- Receive mission commands (Go-to, Loiter, Hover) \\
+- Transmit mission critical information to ground station \\
+- Execute missions and maintain vehicle stability \\
+
+- Many autopilots are available \\
+- PX4 is an open-source autopilot software that can be ran on a number of hardware platforms including the Pixhawk, PixRacer, Parrot Bebop, and Crazyflie. Integrating the pixhawk firmware into a companion computer is useful because more complex software can be ran on-board as well as multiple computer languages. \\
+
+
+
 \subsection{Simulation}
+- As new features and improvements are made to the autopilot software, it is often useful to test the performance of the software in a virtual environment. The process of simulating the autopilot software is called Software in the Loop (SITL).
+
 \subsection{Emulation}
+
+An additional testbed for new navigation, guidance, and control algorithms is the method of emulation. Emulation is the process of mimicking the kinematics of a complex dynamic system on a simplified system. Fixed wing UAV emulation has been observed in \cite{louali_designing_2014}, \cite{ren_experimental_2007}, and \cite{louali_experimental_2016}.
 
 \section{Path Planning}
 \begin{itemize}
@@ -260,7 +306,7 @@
   %or DOI AND that DOIs be set in the same font as everything else.
   %I have modified the alphaurl style file, to conform to these requirements.
   \bibliographystyle{alphaurl_etd}   
-  \bibliography{Zotero}
+  \bibliography{bib}
 }
 
 \appendix           % Indicates the transition from chapters to appendices.  
