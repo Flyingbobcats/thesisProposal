@@ -1,0 +1,21 @@
+@inproceedings{koren1991potential,
+  title={Potential field methods and their inherent limitations for mobile robot navigation},
+  author={Koren, Yoram and Borenstein, Johann},
+  booktitle={Robotics and Automation, 1991. Proceedings., 1991 IEEE International Conference on},
+  pages={1398--1404},
+  year={1991},
+  organization={IEEE}
+}
+
+
+@article{borenstein1989real,
+  title={Real-time obstacle avoidance for fast mobile robots},
+  author={Borenstein, Johann and Koren, Yoram},
+  journal={IEEE Transactions on Systems, Man, and Cybernetics},
+  volume={19},
+  number={5},
+  pages={1179--1187},
+  year={1989},
+  publisher={IEEE}
+}
+
