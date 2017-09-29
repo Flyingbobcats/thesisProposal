@@ -175,24 +175,13 @@ Unmanned Aerial Vehicles (UAVs) can be used for a multitude of complex tasks suc
 
 
 
+
 \chapter{Literature Review}
 \section{Unmanned Aerial Vehicles}
 
 In literature, UAVs generally occupy one of two categories consisting of fixed wing aircraft and multi-rotor aircraft. Fixed wing aircraft can carry a large payload and are ideal for long endurance missions, whereas multi-rotor aircraft are used when hovering or high maneuverability is desired. Both categories of vehicles require navigation, guidance, and control to maintain flight and accomplish their task. These processes are often automated and programmed into flight controllers that are placed on-board the aircraft itself. 
 
-
-\subsection{Navigation, Guidance, and Control}
-
-Before commanding a vehicle to a given task it is paramount that the location of a vehicle with respect to some reference point is known. Measuring, filtering, and estimating the location of a vehicle generally falls under the study of navigation. Commanding a vehicles heading and general operation is provided by a guidance system. Maintaining vehicle stability and reducing any errors is the responsibility of a control system. 
-
-\subsection{Navigation}
-Sensor packages containing GPS receivers, barometers, and compasses measure the location and heading of a vehicle. Data is always subject to uncertainty caused by process and measurement noise. Filtering measurements with Kalman filters produce estimates that more accurately represent the location and heading.
-
-\subsection{Guidance}
-
-\subsection{Control}
-
-
+ - Tasks (path following, waypoint navigation, loitering)
 
 \subsection{Flight Mechanics}
 
@@ -201,96 +190,233 @@ Sensor packages containing GPS receivers, barometers, and compasses measure the 
 - Drag
 
 - Kinematics
-	- Dubins equations of motion
+- Dubins equations of motion
 - Dynamics
-	- Need more literature
-- Control
-	- Brief description of feedback control 
-\subsection{Autopilot}
+- Need more literature
 
-Autopilots are responsible for maintaining vehicle stability while carrying out mission objectives such as waypoint navigation and loitering. Vehicle stability is achieved by controlling the UAVs actuators through feedback control methods. 
-
-
-
-- Hardware and software packages \\
-- Collect and filter sensor data \\
-- Receive mission commands (Go-to, Loiter, Hover) \\
-- Transmit mission critical information to ground station \\
-- Execute missions and maintain vehicle stability \\
-
-- Many autopilots are available \\
-- PX4 is an open-source autopilot software that can be ran on a number of hardware platforms including the Pixhawk, PixRacer, Parrot Bebop, and Crazyflie. Integrating the pixhawk firmware into a companion computer is useful because more complex software can be ran on-board as well as multiple computer languages. \\
+- Forward velocity constraints, turn rate constraints
+- Transition could be the autopilot ensures that the vehicle does not violate these constraints or attempt to
+- Autopilot (combindation of hardware and software, takes mission objectives and produces necessary actuator output)
 
 
 
-\subsection{Simulation}
-- As new features and improvements are made to the autopilot software, it is often useful to test the performance of the software in a virtual environment. The process of simulating the autopilot software is called Software in the Loop (SITL).
+\section{Navigation}
+Before commanding a vehicle to a given task it is paramount that the location of a vehicle with respect to some reference point is known. Measuring, filtering, and estimating the location of a vehicle generally falls under the study of navigation. Commanding a vehicles heading and general operation is provided by a guidance system. Maintaining vehicle stability and reducing any errors is the responsibility of a control system. 
 
-\subsection{Emulation}
+Sensor packages containing GPS receivers, barometers, and compasses measure the location and heading of a vehicle. Data is always subject to uncertainty caused by process and measurement noise. Filtering measurements with Kalman filters produce estimates that more accurately represent the location and heading.
 
-An additional testbed for new navigation, guidance, and control algorithms is the method of emulation. Emulation is the process of mimicking the kinematics of a complex dynamic system on a simplified system. Fixed wing UAV emulation has been observed in \cite{louali_designing_2014}, \cite{ren_experimental_2007}, and \cite{louali_experimental_2016}.
+\section{Guidance and Control}
 
-\section{Path Planning}
-\begin{itemize}
+Guidance and control are intermingled in many UAV systems. . . etc
 
-%In no particular order of importance, all points that should be discussed
-\item Current state to goal state while passing through objectives
-\item High level obstacle avoidance
-\item Line or series of waypoints
-\item How vehicle reaches line or points not necessarily considered
-\item Responsibility of guidance
-\item Avoid collisions, seeking goals
-\end{itemize}
 
-\section{Guidance}
+
+
 \subsection{Potential Field}
 \begin{itemize}
-\item Potential field (what is it) (edge of bowl, marble, goal, obstacles)
-\item Calculation time
-\begin{itemize}
-\item Long time to calculate
-\item Environment changes, entire field has to be regenerated
-\item Improvements could be made with better computing methods . . .
-\end{itemize}
-
-\item Local minimums
-\begin{itemize}
-\item Local minimums are a significant area of study in potential field
-\item Examples of how the problem is being addressed
-\item Common issue across the board - No clear solution in sight
-\item As missions become more complex, the problem only worsens
-\end{itemize}
-
+	\item Potential field (what is it) (edge of bowl, marble, goal, obstacles)
+	\item Calculation time
+	\begin{itemize}
+		\item Long time to calculate
+		\item Environment changes, entire field has to be regenerated
+		\item Improvements could be made with better computing methods . . .
+	\end{itemize}
+	
+	\item Local minimums
+	\begin{itemize}
+		\item Local minimums are a significant area of study in potential field
+		\item Examples of how the problem is being addressed
+		\item Common issue across the board - No clear solution in sight
+		\item As missions become more complex, the problem only worsens
+	\end{itemize}
+	
 \end{itemize}
 
 \subsection{Vector Field}
 \begin{itemize}
-\item First appearance of vector field (Histogram approach) [Koren 1989] (read before typing it out)
-
-\item Experiments with sonar sensor robots [Koren and B 1991]
-
-\item \citep{borenstein_real-time_1990} Improvements on previous vector field histogram
-\item Ground robot
-\item Later work provided improvements
-\item Limitations, size of cells, instability and oscillations
-\item Problems with VF, used as a general path planner with another local path planner on top 
-\item (transition)
-
-
-\item First instance of generating a field for converging onto paths made of straight line and circular segments (Nelson, Barber, 2006)
-\item Field construction of Nelson and Barber (More reading)
-\item Added benefit of VF is adding component to counteract wind
-
-\item Cooperative Standoff Tracking of Uncertain moving targets (2007, Frew)
-\item VF usefulness extended to loitering about an uncertain target
-\item Lyapunov vector field generation for a circular loiter
-\item Linear transformation applied to stretch the field into an ellipse shape
+	\item First appearance of vector field (Histogram approach) [Koren 1989] (read before typing it out)
+	
+	\item Experiments with sonar sensor robots [Koren and B 1991]
+	
+	\item \citep{borenstein_real-time_1990} Improvements on previous vector field histogram
+	\item Ground robot
+	\item Later work provided improvements
+	\item Limitations, size of cells, instability and oscillations
+	\item Problems with VF, used as a general path planner with another local path planner on top 
+	\item (transition)
+	
+	
+	\item First instance of generating a field for converging onto paths made of straight line and circular segments (Nelson, Barber, 2006)
+	\item Field construction of Nelson and Barber (More reading)
+	\item Added benefit of VF is adding component to counteract wind
+	
+	\item Cooperative Standoff Tracking of Uncertain moving targets (2007, Frew)
+	\item VF usefulness extended to loitering about an uncertain target
+	\item Lyapunov vector field generation for a circular loiter
+	\item Linear transformation applied to stretch the field into an ellipse shape
 \end{itemize}
+
+
+
+
+\section{Simulation and Emulation}
+- As new features and improvements are made to the autopilot software, it is often useful to test the performance of the software in a virtual environment. The process of simulating the autopilot software is called Software in the Loop (SITL).
+
+An additional testbed for new navigation, guidance, and control algorithms is the method of emulation. Emulation is the process of mimicking the kinematics of a complex dynamic system on a simplified system. Fixed wing UAV emulation has been observed in \cite{louali_designing_2014}, \cite{ren_experimental_2007}, and \cite{louali_experimental_2016}.
+
+
+
 
 \subsection{Literature Review Summary}
 
 
 \chapter{Methodology}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\chapter{Literature Review}
+%\section{Unmanned Aerial Vehicles}
+%
+%In literature, UAVs generally occupy one of two categories consisting of fixed wing aircraft and multi-rotor aircraft. Fixed wing aircraft can carry a large payload and are ideal for long endurance missions, whereas multi-rotor aircraft are used when hovering or high maneuverability is desired. Both categories of vehicles require navigation, guidance, and control to maintain flight and accomplish their task. These processes are often automated and programmed into flight controllers that are placed on-board the aircraft itself. 
+%
+%
+%\subsection{Navigation, Guidance, and Control}
+%
+%Before commanding a vehicle to a given task it is paramount that the location of a vehicle with respect to some reference point is known. Measuring, filtering, and estimating the location of a vehicle generally falls under the study of navigation. Commanding a vehicles heading and general operation is provided by a guidance system. Maintaining vehicle stability and reducing any errors is the responsibility of a control system. 
+%
+%\subsection{Navigation}
+%Sensor packages containing GPS receivers, barometers, and compasses measure the location and heading of a vehicle. Data is always subject to uncertainty caused by process and measurement noise. Filtering measurements with Kalman filters produce estimates that more accurately represent the location and heading.
+%
+%\subsection{Guidance}
+%
+%\subsection{Control}
+%
+%
+%
+%\subsection{Flight Mechanics}
+%
+%- Lift
+%- Thrust
+%- Drag
+%
+%- Kinematics
+%	- Dubins equations of motion
+%- Dynamics
+%	- Need more literature
+%- Control
+%	- Brief description of feedback control 
+%\subsection{Autopilot}
+%
+%Autopilots are responsible for maintaining vehicle stability while carrying out mission objectives such as waypoint navigation and loitering. Vehicle stability is achieved by controlling the UAVs actuators through feedback control methods. 
+%
+%
+%
+%- Hardware and software packages \\
+%- Collect and filter sensor data \\
+%- Receive mission commands (Go-to, Loiter, Hover) \\
+%- Transmit mission critical information to ground station \\
+%- Execute missions and maintain vehicle stability \\
+%
+%- Many autopilots are available \\
+%- PX4 is an open-source autopilot software that can be ran on a number of hardware platforms including the Pixhawk, PixRacer, Parrot Bebop, and Crazyflie. Integrating the pixhawk firmware into a companion computer is useful because more complex software can be ran on-board as well as multiple computer languages. \\
+%
+%
+%
+%\subsection{Simulation}
+%- As new features and improvements are made to the autopilot software, it is often useful to test the performance of the software in a virtual environment. The process of simulating the autopilot software is called Software in the Loop (SITL).
+%
+%\subsection{Emulation}
+%
+%An additional testbed for new navigation, guidance, and control algorithms is the method of emulation. Emulation is the process of mimicking the kinematics of a complex dynamic system on a simplified system. Fixed wing UAV emulation has been observed in \cite{louali_designing_2014}, \cite{ren_experimental_2007}, and \cite{louali_experimental_2016}.
+%
+%\section{Path Planning}
+%\begin{itemize}
+%
+%%In no particular order of importance, all points that should be discussed
+%\item Current state to goal state while passing through objectives
+%\item High level obstacle avoidance
+%\item Line or series of waypoints
+%\item How vehicle reaches line or points not necessarily considered
+%\item Responsibility of guidance
+%\item Avoid collisions, seeking goals
+%\end{itemize}
+%
+%\section{Guidance}
+%\subsection{Potential Field}
+%\begin{itemize}
+%\item Potential field (what is it) (edge of bowl, marble, goal, obstacles)
+%\item Calculation time
+%\begin{itemize}
+%\item Long time to calculate
+%\item Environment changes, entire field has to be regenerated
+%\item Improvements could be made with better computing methods . . .
+%\end{itemize}
+%
+%\item Local minimums
+%\begin{itemize}
+%\item Local minimums are a significant area of study in potential field
+%\item Examples of how the problem is being addressed
+%\item Common issue across the board - No clear solution in sight
+%\item As missions become more complex, the problem only worsens
+%\end{itemize}
+%
+%\end{itemize}
+%
+%\subsection{Vector Field}
+%\begin{itemize}
+%\item First appearance of vector field (Histogram approach) [Koren 1989] (read before typing it out)
+%
+%\item Experiments with sonar sensor robots [Koren and B 1991]
+%
+%\item \citep{borenstein_real-time_1990} Improvements on previous vector field histogram
+%\item Ground robot
+%\item Later work provided improvements
+%\item Limitations, size of cells, instability and oscillations
+%\item Problems with VF, used as a general path planner with another local path planner on top 
+%\item (transition)
+%
+%
+%\item First instance of generating a field for converging onto paths made of straight line and circular segments (Nelson, Barber, 2006)
+%\item Field construction of Nelson and Barber (More reading)
+%\item Added benefit of VF is adding component to counteract wind
+%
+%\item Cooperative Standoff Tracking of Uncertain moving targets (2007, Frew)
+%\item VF usefulness extended to loitering about an uncertain target
+%\item Lyapunov vector field generation for a circular loiter
+%\item Linear transformation applied to stretch the field into an ellipse shape
+%\end{itemize}
+%
+%\subsection{Literature Review Summary}
+%
+%
+%\chapter{Methodology}
 
 %===****====
 % Remember to include something about latency and control delay. Adding a look-ahead functionality may improve the performance of the VF guidance
