@@ -174,8 +174,6 @@ Unmanned Aerial Vehicles (UAVs) can be used for a multitude of complex tasks suc
 
 
 
-
-
 \chapter{Literature Review}
 \section{Unmanned Aerial Vehicles}
 
@@ -205,6 +203,8 @@ Before commanding a vehicle to a given task it is paramount that the location of
 
 Sensor packages containing GPS receivers, barometers, and compasses measure the location and heading of a vehicle. Data is always subject to uncertainty caused by process and measurement noise. Filtering measurements with Kalman filters produce estimates that more accurately represent the location and heading.
 
+
+
 \section{Guidance and Control}
 
 Guidance and control are intermingled in many UAV systems. . . etc
@@ -212,7 +212,22 @@ Guidance and control are intermingled in many UAV systems. . . etc
 
 
 
+
 \subsection{Potential Field}
+
+- Potential field is a real-time robotic manipulator algorithm that distributes the task of goal seeking and obstacle avoidance among multiple layers of control. 
+
+- The robot's workspace is represented as a gradient potential of artificial attractive and repulsive forces that drive the robot to a desired state. Goals are represented as an attractive force while obstacles provide a repulsive force.
+
+
+- Potential field was first introduced by Khatib as a real-time robotic manipulator algorithm that distributes the task of obstacle avoidance among multiple layers of guidance and control.
+
+- Potential field was first introduced by Khatib as a real-time robotic manipulator algorithm that 
+
+avoidance method that distrubutes the task 
+- First introduced by Khatib 1986
+
+
 \begin{itemize}
 	\item Potential field (what is it) (edge of bowl, marble, goal, obstacles)
 	\item Calculation time
@@ -264,10 +279,9 @@ Guidance and control are intermingled in many UAV systems. . . etc
 
 An additional testbed for new navigation, guidance, and control algorithms is the method of emulation. Emulation is the process of mimicking the kinematics of a complex dynamic system on a simplified system. Fixed wing UAV emulation has been observed in \cite{louali_designing_2014}, \cite{ren_experimental_2007}, and \cite{louali_experimental_2016}.
 
+%Many simplifications are made when developing a simulation model, which may fail to capture some of the complexities of real world systems. Emulation provides another tool for testing an algorithm prior to putting it on actual flight hardware to validate, diagnose, and debug the proposed NGL systems. [Beard, Mclain,book]
 
-
-
-\subsection{Literature Review Summary}
+\section{Literature Review Summary}
 
 
 \chapter{Methodology}
