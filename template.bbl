@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{RMSB07}
+\begin{thebibliography}{GPM{\etalchar{+}}10}
 
 \bibitem[BK90]{borenstein_real-time_1990}
 Johann Borenstein and Yoram Koren.
@@ -8,6 +8,45 @@ Johann Borenstein and Yoram Koren.
 \newblock In {\em Robotics and {Automation}, 1990. {Proceedings}., 1990 {IEEE}
   {International} {Conference} on}, pages 572--577. IEEE, 1990.
 \newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/126042/}
+
+\bibitem[EK02]{esposito_method_2002}
+Joel~M. Esposito and Vijay Kumar.
+\newblock A method for modifying closed-loop motion plans to satisfy
+  unpredictable dynamic constraints at runtime.
+\newblock In {\em Robotics and {Automation}, 2002. {Proceedings}. {ICRA}'02.
+  {IEEE} {International} {Conference} on}, volume~2, pages 1691--1696. IEEE,
+  2002.
+\newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/1014785/}
+
+\bibitem[Fre]{frew_lyapunov_nodate}
+Eric Frew.
+\newblock Lyapunov {Guidance} {Vector} {Fields} for {Unmanned} {Aircraft}
+  {Applications}.pdf.
+
+\bibitem[GPM{\etalchar{+}}10]{goncalves_vector_2010}
+Vinícius~M. Gonçalves, Luciano~CA Pimenta, Carlos~A. Maia, Bruno~CO Dutra,
+  and Guilherme~AS Pereira.
+\newblock Vector fields for robot navigation along time-varying curves in \$ n
+  \$-dimensions.
+\newblock {\em IEEE Transactions on Robotics}, 26(4):647--659, 2010.
+\newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/5504176/}
+
+\bibitem[GPMP09]{goncalves_artificial_2009}
+Vinicius~M. Goncalves, Luciano C.~A. Pimenta, Carlos~A. Maia, and Guilherme
+  A.~S. Pereira.
+\newblock Artificial vector fields for robot convergence and circulation of
+  time-varying curves in n-dimensional spaces.
+\newblock pages 2012--2017. IEEE, 2009.
+\newblock URL: \url{http://ieeexplore.ieee.org/document/5160350/}, \href
+  {http://dx.doi.org/10.1109/ACC.2009.5160350} {{doi:10.1109/ACC.2009.5160350}}
+
+\bibitem[Kha86]{khatib_real-time_1986}
+Oussama Khatib.
+\newblock Real-time obstacle avoidance for manipulators and mobile robots.
+\newblock {\em The international journal of robotics research}, 5(1):90--98,
+  1986.
+\newblock URL:
+  \url{http://journals.sagepub.com/doi/abs/10.1177/027836498600500106}
 
 \bibitem[LDN{\etalchar{+}}14]{louali_designing_2014}
 Rabah Louali, Mohand~Said Djouadi, Abdelkrim Nemra, Samir Bouaziz, and
@@ -28,6 +67,20 @@ Rabah Louali, Abdelhafid Elouardi, Samir Bouaziz, and Mohand~Saïd Djouadi.
   {http://dx.doi.org/10.1007/s10846-015-0323-y}
   {{doi:10.1007/s10846-015-0323-y}}
 
+\bibitem[Nel05]{nelson_cooperative_2005}
+Derek~R. Nelson.
+\newblock Cooperative control of miniature air vehicles.
+\newblock 2005.
+\newblock URL: \url{http://scholarsarchive.byu.edu/etd/1095/}
+
+\bibitem[OAE16]{oliveira_moving_2016}
+Tiago Oliveira, A.~Pedro Aguiar, and Pedro Encarnacao.
+\newblock Moving {Path} {Following} for {Unmanned} {Aerial} {Vehicles} {With}
+  {Applications} to {Single} and {Multiple} {Target} {Tracking} {Problems}.
+\newblock {\em IEEE Transactions on Robotics}, 32(5):1062--1078, October 2016.
+\newblock URL: \url{http://ieeexplore.ieee.org/document/7553466/}, \href
+  {http://dx.doi.org/10.1109/TRO.2016.2593044} {{doi:10.1109/TRO.2016.2593044}}
+
 \bibitem[RMSB07]{ren_experimental_2007}
 W.~Ren, T.~McLain, J.-S. Sun, and R.~Beard.
 \newblock Experimental validation of an autonomous control system on a mobile
@@ -38,5 +91,14 @@ W.~Ren, T.~McLain, J.-S. Sun, and R.~Beard.
   \url{http://digital-library.theiet.org/content/journals/10.1049/iet-cta_20070017},
   \href {http://dx.doi.org/10.1049/iet-cta:20070017}
   {{doi:10.1049/iet-cta:20070017}}
+
+\bibitem[SSS14]{sujit_unmanned_2014}
+P.B. Sujit, Srikanth Saripalli, and Joao~Borges Sousa.
+\newblock Unmanned {Aerial} {Vehicle} {Path} {Following}: {A} {Survey} and
+  {Analysis} of {Algorithms} for {Fixed}-{Wing} {Unmanned} {Aerial}
+  {Vehicless}.
+\newblock {\em IEEE Control Systems}, 34(1):42--59, February 2014.
+\newblock URL: \url{http://ieeexplore.ieee.org/document/6712082/}, \href
+  {http://dx.doi.org/10.1109/MCS.2013.2287568} {{doi:10.1109/MCS.2013.2287568}}
 
 \end{thebibliography}

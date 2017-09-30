@@ -187,14 +187,22 @@ In literature, UAVs generally occupy one of two categories consisting of fixed w
 - Thrust
 - Drag
 
-- Kinematics
-- Dubins equations of motion
-- Dynamics
-- Need more literature
+- Kinematics \\
+- Dubins equations of motion \\
+- Dynamics \\
+- Need more literature \\
 
-- Forward velocity constraints, turn rate constraints
-- Transition could be the autopilot ensures that the vehicle does not violate these constraints or attempt to
+- Forward velocity constraints, turn rate constraints \\
+- Transition could be the autopilot ensures that the vehicle does not violate these constraints or attempt to \\
 - Autopilot (combindation of hardware and software, takes mission objectives and produces necessary actuator output)
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{PaperFigures/ngcFlow}
+	\caption{Navigation Guidance and Control Flowchart}
+	\label{fig:ngcflow}
+\end{figure}
 
 
 
@@ -206,26 +214,28 @@ Sensor packages containing GPS receivers, barometers, and compasses measure the 
 
 
 \section{Guidance and Control}
+Traditional guidance and control are considered separate and independent systems that only exchange the most basic information. High level guidance provides the control system with a commanded heading and velocity to guide the UAV to a path or waypoint designed by the path planner. Low level control accepts the guidance and attempts to drive the state error to zero while maintaining vehicle stability. As more complicated tasks are assigned to UAVs, such as converge and follow a moving path \cite{oliveira_moving_2016} either the guidance or control will become more complicated. The line between guidance and control is starting to become less tangible as the responsibilities of the guidance system becomes more intertwined with control systems. 
 
-Guidance and control are intermingled in many UAV systems. . . etc
-
-
-
+One notable field of study in robotic guidance is that of vector fields. Each point in the operational space of the robot is assigned a vector of \textit{n}-dimensions that can represent velocity, acceleration, or any arbitrary state. Vector fields have been shown to be an effective way to guide a UAV to a path and does so with less error and control effort than non-linear guidance, linear quadratic regulator, carrot chasing, and pure pursuit line of sight methods \cite{sujit_unmanned_2014}. There are many ways to build a vector field including potential Lagrangian functions \cite{khatib_real-time_1986}, Lyapunov navigation functions \cite{esposito_method_2002}\cite{frew_lyapunov_nodate} \cite{nelson_cooperative_2005}, and integral curves by intersection of surfaces \cite{goncalves_artificial_2009} \cite{goncalves_vector_2010}.
 
 
 \subsection{Potential Field}
+Potential field is a real-time robotic manipulator algorithm that distributes the task of goal seeking and obstacle avoidance among multiple layers of control \cite{khatib_real-time_1986}. The robot's workspace is represented as a gradient potential of attractive and repulsive artificial forces that drive the robot to a desired state. Goals are represented as an attractive force while obstacles provide a repulsive force. The potential field is constructed by modeling the robots motion in terms of Lagrangian mechanics shown in Equation \ref{LeeMotion}. The Lagrangian is defined as the difference in kinetic energy $T(x,\dot{x})$ and potential energy $U(x)$ in a system. The goal of the system imparts a potential $U_{xd}$ while obstacles impart a repulsive potential $U_o$. 
 
-- Potential field is a real-time robotic manipulator algorithm that distributes the task of goal seeking and obstacle avoidance among multiple layers of control. 
+\begin{equation}\label{LeeMotion}
+\frac{d}{dt} \left(\frac{\partial L}{\partial \dot{x}}\right) - \frac{\partial L}{\partial x} = F
+\end{equation}
 
-- The robot's workspace is represented as a gradient potential of artificial attractive and repulsive forces that drive the robot to a desired state. Goals are represented as an attractive force while obstacles provide a repulsive force.
+\begin{equation}\label{lagrange}
+L(x,\dot{x}) = T(x,\dot{x}) - U(x)
+\end{equation}
+
+\begin{equation}\label{potential}
+U_{art}(x) = U_{xd} + U_o(x)
+\end{equation}
 
 
-- Potential field was first introduced by Khatib as a real-time robotic manipulator algorithm that distributes the task of obstacle avoidance among multiple layers of guidance and control.
 
-- Potential field was first introduced by Khatib as a real-time robotic manipulator algorithm that 
-
-avoidance method that distrubutes the task 
-- First introduced by Khatib 1986
 
 
 \begin{itemize}
