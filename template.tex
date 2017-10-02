@@ -106,10 +106,14 @@
 %%%% -------- Points that I may want to include, but am not sure where yet --------%
 %
 % Its not uncommon for a simplified vehicle to be used (Dubins, simple constraints, etc)
+% it is often assumed that there exists an autopilot that controls the heading and flight path angle and the system representing the uav is simplified to a dubins path
+%
 %	[Chen, Chang, Agate 2009]
 %	[Liang, Jia 2017]
 %	[Nelson, Barber, 2005]
-%
+%	[Griffiths 2006]
+%	[Jung et al, 2016]
+%	[]
 %
 % Vector Normalization
 %	[Chen,Change, Agate 2009] (lambda)
@@ -175,11 +179,47 @@ Unmanned Aerial Vehicles (UAVs) can be used for a multitude of complex tasks suc
 
 
 \chapter{Literature Review}
+\section{Literature Review Introduction}
+ %==========================================================================================
+% Tell the reader what you're going to tell them
+% - Fixed wing operation
+% - Navigation
+% - Guidance and control
+% - Obstacle avoidance and circumnavigation by time paramerterized vector field
+% 
+% Tell the reader something
+% Tell them what you told them
+
+
 \section{Unmanned Aerial Vehicles}
 
 In literature, UAVs generally occupy one of two categories consisting of fixed wing aircraft and multi-rotor aircraft. Fixed wing aircraft can carry a large payload and are ideal for long endurance missions, whereas multi-rotor aircraft are used when hovering or high maneuverability is desired. Both categories of vehicles require navigation, guidance, and control to maintain flight and accomplish their task. These processes are often automated and programmed into flight controllers that are placed on-board the aircraft itself. 
 
+ - Miniature Aerial Vehicles (Classification, what makes them different then traditional fixed wing UAVs...etc)
+
  - Tasks (path following, waypoint navigation, loitering)
+ - Trajectory following versus path following. Trajectory following is not as popular for MAVs since the added constraint is more difficult to achieve compared to path following
+ 
+ - The autopilots that operate the UAVs do so through several layers of systems known as navigation, guidance, and control NGL
+ 
+ - Path planning
+ - Guidance
+ - Control
+ 
+ - Who (Civilians and military)
+ - Military uses for surveillance, reconnaissance, data transmission
+ - Civilians have found uses such as aerial photography, environmental monitoring, and racing, fire monitoring
+ 
+ - One of the many strengths in unmanned systems is the potential for autonomy (equivalent to fire-and-forget). Autonomy frees up operators for other decision making
+ 
+ \begin{equation}\label{dubinsx}
+ \dot{x} = V\cos(\theta)
+ \end{equation}
+  \begin{equation}\label{dubinsy}
+ \dot{y} = V\sin(\theta)
+ \end{equation}
+ 
+
 
 \subsection{Flight Mechanics}
 
@@ -187,14 +227,24 @@ In literature, UAVs generally occupy one of two categories consisting of fixed w
 - Thrust
 - Drag
 
-- Kinematics \\
-- Dubins equations of motion \\
-- Dynamics \\
-- Need more literature \\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{PaperFigures/fixedwing}
+	\caption{Fixed Wing UAV}
+	\label{fig:fixedwing}
+\end{figure}
+
+
 
 - Forward velocity constraints, turn rate constraints \\
 - Transition could be the autopilot ensures that the vehicle does not violate these constraints or attempt to \\
-- Autopilot (combindation of hardware and software, takes mission objectives and produces necessary actuator output)
+- Autopilot (combination of hardware and software, takes mission objectives and produces necessary actuator output)
+
+% "After planning waypoints, paths are then planned by connecting points together" [Jung et al 2016]
+% - These are connected a number of ways, go to jung et al for more information. Dubins, etc
+% - After paths are generated, guidance takes over to guide UAV to converge and stay on the path
+%
+
 
 
 \begin{figure}[h]
@@ -214,6 +264,13 @@ Sensor packages containing GPS receivers, barometers, and compasses measure the 
 
 
 \section{Guidance and Control}
+
+%===============
+%
+% Depending on the source, potential field may be referred to as a vector field, but for organizational purposes potential field will be classified separately as a potential gradient and vector field as a path converging and %  	following method
+%
+% Vector fields may be referred to as a potential field, but for organizational purposes they will be discussed as seperate methods all together where a potential field represents a potential gradient. A vector field represents a space of vectors whose integral lines converge and follow a path
+%
 Traditional guidance and control are considered separate and independent systems that only exchange the most basic information. High level guidance provides the control system with a commanded heading and velocity to guide the UAV to a path or waypoint designed by the path planner. Low level control accepts the guidance and attempts to drive the state error to zero while maintaining vehicle stability. As more complicated tasks are assigned to UAVs, such as converge and follow a moving path \cite{oliveira_moving_2016} either the guidance or control will become more complicated. The line between guidance and control is starting to become less tangible as the responsibilities of the guidance system becomes more intertwined with control systems. 
 
 One notable field of study in robotic guidance is that of vector fields. Each point in the operational space of the robot is assigned a vector of \textit{n}-dimensions that can represent velocity, acceleration, or any arbitrary state. Vector fields have been shown to be an effective way to guide a UAV to a path and does so with less error and control effort than non-linear guidance, linear quadratic regulator, carrot chasing, and pure pursuit line of sight methods \cite{sujit_unmanned_2014}. There are many ways to build a vector field including potential Lagrangian functions \cite{khatib_real-time_1986}, Lyapunov navigation functions \cite{esposito_method_2002}\cite{frew_lyapunov_nodate} \cite{nelson_cooperative_2005}, and integral curves by intersection of surfaces \cite{goncalves_artificial_2009} \cite{goncalves_vector_2010}.
@@ -234,47 +291,114 @@ L(x,\dot{x}) = T(x,\dot{x}) - U(x)
 U_{art}(x) = U_{xd} + U_o(x)
 \end{equation}
 
+Potential field has been shown to be successful at driving a robot from an initial state to a goal state while avoiding obstacles by taking the path of least action formed by the gradient. One of the weaknesses of potential field identified early on is the methods susceptibility to local minima, preventing the robot from reaching the desired global minima, or goal state \cite{koren_potential_1991}. Local minima can be avoided in the potential field method if navigation functions are used \cite{goerzen_survey_2010}.\\
 
+Potential field is useful for point-to-point guidance and control which is often the task of UAVs traveling to waypoints, however it is often desired for a UAV to converge to and follow a path. 
 
-
-
-\begin{itemize}
-	\item Potential field (what is it) (edge of bowl, marble, goal, obstacles)
-	\item Calculation time
-	\begin{itemize}
-		\item Long time to calculate
-		\item Environment changes, entire field has to be regenerated
-		\item Improvements could be made with better computing methods . . .
-	\end{itemize}
-	
-	\item Local minimums
-	\begin{itemize}
-		\item Local minimums are a significant area of study in potential field
-		\item Examples of how the problem is being addressed
-		\item Common issue across the board - No clear solution in sight
-		\item As missions become more complex, the problem only worsens
-	\end{itemize}
-	
-\end{itemize}
+%%%%%%%%%% Additional points and clarification needed here before moving on
+%
+% Address navigation functions
+% Re-read Goerzens review article and understand the scope of PF to a better degree
+% Improve the transition to vector field
+%		- Potential fields have proven to be useful for point-to-point navigation, however lack the framework for one of the common applications for fixed wing UAVs, path following
+%
+%
 
 \subsection{Vector Field}
+
+%Description into what the vector field actually is
+% Vector field provides a directional guidance. Building that field can be done in a number of ways
+%
+% In cases referenced as lyapunov, the method is used to derive the vector field and prove stability
+%
+% Takes current vehicle position and guides UAV to the path
+%
+%
+% Think about discussing the general behavior of vector field paths (When far away from the path, the vector tends to point more perpendicular, as you approach the path, it transitions to trangent to the path)
+% 
+
+Several methods have been developed to generate vector fields that converge to and follow paths. Histogram virtual force field (VFF) breaks the workspace into discrete cells that contain information in regards to the certainty of the presence of an obstacle \cite{borenstein_real-time_1990} \cite{borenstein_vector_1991}. Cells containing an obstacle apply an artificial guidance force away from the cell. Goals apply a global attractive force that drive the robot towards the desired state. The resultant guidance vector for the VFF method is the sum of the contributions of obstacle repulsive cells and the globally attractive goal. Lyapunov and navigation functions have been successfully used to provide guidance for converging to and following a path. Nelson et al. developed a method for generating a vector field that converges to and follows a path for line and circular primitives \cite{nelson_cooperative_2005}. Sinks, dead zones, and singularities were avoided when constructing more complex flight paths from the primitives by only allowing a single field to be active at any time. A vector field construction method for curved paths was presented in \cite{griffiths_vector_2006} by extending Nelson's method. Elliptical paths have been generated by from primitives by applying coordinate transformations to the field \cite{frew_lyapunov_nodate}.
+
+
+
+
+Vector fields have many advantages to traditional guidance. UAVs often encounter disturbances in the form of wind which can be difficult to plan for. In the event a UAV encounters wind disturbances and is pushed off course, the field will drive the vehicle back on course \cite{de_marina_guidance_2017}. In addition to path following, vector field has been used to track a moving target in 3D \cite{miao_orthogonal_2016}. When the location of the target is unknown, loitering about an uncertain target can be achieved by building a circular vector field and applying a linear coordinate transformation to form an elliptical loiter based on the uncertainty in targets position estimate \cite{frew_cooperative_2007}. 
+
+
+%
+% 3D Vector field 
+% \cite{meenakshisundaram_vector_2010}
+%
+%
+%
+
+- Following curved paths in a constant wind \cite{griffiths_vector_2006}
+
+
+%%%%%% Points to make for vector field
+%
+% - Disturbance rejection (wind)
+% - Well suited for unplanned obstacle avoidance
+% - Many applications are best described as path following instead of singular point convergence like potential field
+% - Standoff tracking of uncertain targets
+%
+%
+
+Another method for constructing a vector field is by forming integral curves that converge at the intersection of surfaces \cite{goncalves_artificial_2009}. 
+
+- construct an n-dimensional vector field by forming integral curves that converge at the intersection of surfaces
+- Field is a result of the sum of 3 terms
+  - Convergence
+  - Circulation
+  - Time varying\\
+
+
+% Note, modify the field equation to what jay has in his paper
+\begin{equation}\label{gonFieldeq}
+\boldsymbol{u} = G\nabla_qV+H\wedge_{i=1}\nabla_q\alpha_i - M(\alpha)^{-1}\boldsymbol{a}(\alpha)
+\end{equation}
+
+- Define all variables
+	- u is the resulting 2x1 vector
+	- Gradient
+	- $alpha_i$ is a surface function
+	- Wedge product simplifies to cross product in 2d
+	- G, H, L scalar weighting quantities 
+	- The intersection of the surfaces represents a path to converge and follow
+	- Cylinder and plane example
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{PaperFigures/convergence}
+	\caption{}
+	\label{fig:convergence}
+	
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{PaperFigures/circulation}
+	\caption{}
+	\label{fig:circulation}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"PaperFigures/time varying"}
+	\caption{}
+	\label{fig:time-varying}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{PaperFigures/total}
+	\caption{}
+	\label{fig:total}
+\end{figure}
+
 \begin{itemize}
-	\item First appearance of vector field (Histogram approach) [Koren 1989] (read before typing it out)
-	
-	\item Experiments with sonar sensor robots [Koren and B 1991]
-	
-	\item \citep{borenstein_real-time_1990} Improvements on previous vector field histogram
-	\item Ground robot
-	\item Later work provided improvements
-	\item Limitations, size of cells, instability and oscillations
-	\item Problems with VF, used as a general path planner with another local path planner on top 
-	\item (transition)
-	
-	
-	\item First instance of generating a field for converging onto paths made of straight line and circular segments (Nelson, Barber, 2006)
-	\item Field construction of Nelson and Barber (More reading)
-	\item Added benefit of VF is adding component to counteract wind
-	
 	\item Cooperative Standoff Tracking of Uncertain moving targets (2007, Frew)
 	\item VF usefulness extended to loitering about an uncertain target
 	\item Lyapunov vector field generation for a circular loiter
@@ -325,43 +449,6 @@ An additional testbed for new navigation, guidance, and control algorithms is th
 
 
 
-%\chapter{Literature Review}
-%\section{Unmanned Aerial Vehicles}
-%
-%In literature, UAVs generally occupy one of two categories consisting of fixed wing aircraft and multi-rotor aircraft. Fixed wing aircraft can carry a large payload and are ideal for long endurance missions, whereas multi-rotor aircraft are used when hovering or high maneuverability is desired. Both categories of vehicles require navigation, guidance, and control to maintain flight and accomplish their task. These processes are often automated and programmed into flight controllers that are placed on-board the aircraft itself. 
-%
-%
-%\subsection{Navigation, Guidance, and Control}
-%
-%Before commanding a vehicle to a given task it is paramount that the location of a vehicle with respect to some reference point is known. Measuring, filtering, and estimating the location of a vehicle generally falls under the study of navigation. Commanding a vehicles heading and general operation is provided by a guidance system. Maintaining vehicle stability and reducing any errors is the responsibility of a control system. 
-%
-%\subsection{Navigation}
-%Sensor packages containing GPS receivers, barometers, and compasses measure the location and heading of a vehicle. Data is always subject to uncertainty caused by process and measurement noise. Filtering measurements with Kalman filters produce estimates that more accurately represent the location and heading.
-%
-%\subsection{Guidance}
-%
-%\subsection{Control}
-%
-%
-%
-%\subsection{Flight Mechanics}
-%
-%- Lift
-%- Thrust
-%- Drag
-%
-%- Kinematics
-%	- Dubins equations of motion
-%- Dynamics
-%	- Need more literature
-%- Control
-%	- Brief description of feedback control 
-%\subsection{Autopilot}
-%
-%Autopilots are responsible for maintaining vehicle stability while carrying out mission objectives such as waypoint navigation and loitering. Vehicle stability is achieved by controlling the UAVs actuators through feedback control methods. 
-%
-%
-%
 %- Hardware and software packages \\
 %- Collect and filter sensor data \\
 %- Receive mission commands (Go-to, Loiter, Hover) \\

@@ -11,16 +11,17 @@
 \contentsline {section}{\numberline {1.3}Phases}{11}{section.1.3}
 \contentsline {section}{\numberline {1.4}Summary of Objectives}{11}{section.1.4}
 \contentsline {chapter}{\numberline {2}Literature Review}{12}{chapter.2}
-\contentsline {section}{\numberline {2.1}Unmanned Aerial Vehicles}{12}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Flight Mechanics}{12}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}Navigation}{12}{section.2.2}
-\contentsline {section}{\numberline {2.3}Guidance and Control}{13}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Potential Field}{14}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Vector Field}{15}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Simulation and Emulation}{16}{section.2.4}
-\contentsline {section}{\numberline {2.5}Literature Review Summary}{16}{section.2.5}
-\contentsline {chapter}{\numberline {3}Methodology}{17}{chapter.3}
-\contentsline {chapter}{References}{18}{schapter.8}
+\contentsline {section}{\numberline {2.1}Literature Review Introduction}{12}{section.2.1}
+\contentsline {section}{\numberline {2.2}Unmanned Aerial Vehicles}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Flight Mechanics}{12}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Navigation}{14}{section.2.3}
+\contentsline {section}{\numberline {2.4}Guidance and Control}{14}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Potential Field}{15}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Vector Field}{16}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Simulation and Emulation}{17}{section.2.5}
+\contentsline {section}{\numberline {2.6}Literature Review Summary}{20}{section.2.6}
+\contentsline {chapter}{\numberline {3}Methodology}{21}{chapter.3}
+\contentsline {chapter}{References}{22}{schapter.8}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{Appendix: An Appendix}{20}{appendix.A}
-\contentsline {section}{\numberline {A.1}A Section in the Appendix}{20}{section.A.1}
+\contentsline {chapter}{Appendix: An Appendix}{25}{appendix.A}
+\contentsline {section}{\numberline {A.1}A Section in the Appendix}{25}{section.A.1}

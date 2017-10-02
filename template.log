@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  30 SEP 2017 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  2 OCT 2017 12:50
 entering extended mode
 **./template.tex
 (template.tex
@@ -895,56 +895,116 @@ Chapter 1.
 
 ]
 Chapter 2.
-<PaperFigures/ngcFlow.png, id=183, 972.63374pt x 271.0125pt>
-File: PaperFigures/ngcFlow.png Graphic file (type png)
+<PaperFigures/fixedwing.jpg, id=198, 903.375pt x 602.25pt>
+File: PaperFigures/fixedwing.jpg Graphic file (type jpg)
 
-<use PaperFigures/ngcFlow.png>
-Package pdftex.def Info: PaperFigures/ngcFlow.png used on input line 202.
-(pdftex.def)             Requested size: 303.53267pt x 84.5754pt.
+<use PaperFigures/fixedwing.jpg>
+Package pdftex.def Info: PaperFigures/fixedwing.jpg used on input line 227.
+(pdftex.def)             Requested size: 303.53267pt x 202.35461pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12
 
-] [13 <./PaperFigures/ngcFlow.png>] [14] [15] [16]
+] <PaperFigures/ngcFlow.png, id=206, 972.63374pt x 271.0125pt>
+File: PaperFigures/ngcFlow.png Graphic file (type png)
+
+<use PaperFigures/ngcFlow.png>
+Package pdftex.def Info: PaperFigures/ngcFlow.png used on input line 251.
+(pdftex.def)             Requested size: 303.53267pt x 84.5754pt.
+ [13 <./PaperFigures/fixedwing.jpg> <./PaperFigures/ngcFlow.png>] [14] [15] [16
+]
+<PaperFigures/convergence.png, id=268, 421.575pt x 316.18124pt>
+File: PaperFigures/convergence.png Graphic file (type png)
+
+<use PaperFigures/convergence.png>
+Package pdftex.def Info: PaperFigures/convergence.png used on input line 359.
+(pdftex.def)             Requested size: 303.53267pt x 227.65514pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<PaperFigures/circulation.png, id=269, 421.575pt x 316.18124pt>
+File: PaperFigures/circulation.png Graphic file (type png)
+
+<use PaperFigures/circulation.png>
+Package pdftex.def Info: PaperFigures/circulation.png used on input line 367.
+(pdftex.def)             Requested size: 303.53267pt x 227.65514pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<"PaperFigures/time varying".png, id=270, 421.575pt x 316.18124pt>
+File: "PaperFigures/time varying".png Graphic file (type png)
+
+<use "PaperFigures/time varying".png>
+Package pdftex.def Info: "PaperFigures/time varying".png used on input line 374
+.
+(pdftex.def)             Requested size: 303.53267pt x 227.65514pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<PaperFigures/total.png, id=271, 421.575pt x 316.18124pt>
+File: PaperFigures/total.png Graphic file (type png)
+
+<use PaperFigures/total.png>
+Package pdftex.def Info: PaperFigures/total.png used on input line 382.
+(pdftex.def)             Requested size: 303.53267pt x 227.65514pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
+
+LaTeX Warning: Text page 18 contains only floats.
+
+[18 <./PaperFigures/convergence.png (PNG copy)> <./PaperFigures/circulation.png
+ (PNG copy)>]
+
+LaTeX Warning: Text page 19 contains only floats.
+
+[19 <./PaperFigures/time varying.png (PNG copy)> <./PaperFigures/total.png (PNG
+ copy)>] [20]
 Chapter 3.
-[17
+[21
 
 ] (template.bbl
 Missing character: There is no Ã in font txr!
 Missing character: There is no ­ in font txr!
 Missing character: There is no Ã in font txr!
 Missing character: There is no § in font txr!
+ [22
+
+
+]
 Missing character: There is no Ã in font txr!
 Missing character: There is no ¯ in font txr!
- [18
-
-
-]) [19]
+ [23]) [24]
 Appendix A.
 
 AED: lastpage setting LastPage
-[20
+[25
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 468.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 468.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 541.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 541.
  (template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 468.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 468.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 541.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 541.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: EF097C4FADD87996726D98F78AB5A5DA;1342.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 468.
+(rerunfilecheck)             Checksum: 0FF23C5C57A7F665FC8C55CBA5E49225;1420.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 541.
  ) 
 Here is how much of TeX's memory you used:
- 8486 strings out of 493320
- 119076 string characters out of 3138948
- 205527 words of memory out of 3000000
- 11790 multiletter control sequences out of 15000+200000
- 30712 words of font info for 77 fonts, out of 3000000 for 9000
+ 8574 strings out of 493320
+ 120974 string characters out of 3138948
+ 205977 words of memory out of 3000000
+ 11848 multiletter control sequences out of 15000+200000
+ 32049 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,6n,28p,884b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,6n,28p,1403b,544s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/txfonts/rtcxr.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/txfonts/rtxbsc.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
@@ -953,10 +1013,11 @@ mi.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
-tmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (20 pages, 127396 bytes).
+tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on template.pdf (25 pages, 466870 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 403 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
 

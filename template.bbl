@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{GPM{\etalchar{+}}10}
+\begin{thebibliography}{dMKB{\etalchar{+}}17}
 
 \bibitem[BK90]{borenstein_real-time_1990}
 Johann Borenstein and Yoram Koren.
@@ -8,6 +8,22 @@ Johann Borenstein and Yoram Koren.
 \newblock In {\em Robotics and {Automation}, 1990. {Proceedings}., 1990 {IEEE}
   {International} {Conference} on}, pages 572--577. IEEE, 1990.
 \newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/126042/}
+
+\bibitem[BK91]{borenstein_vector_1991}
+Johann Borenstein and Yoram Koren.
+\newblock The vector field histogram-fast obstacle avoidance for mobile robots.
+\newblock {\em IEEE transactions on robotics and automation}, 7(3):278--288,
+  1991.
+\newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/88137/}
+
+\bibitem[dMKB{\etalchar{+}}17]{de_marina_guidance_2017}
+Hector~Garcia de~Marina, Yuri~A. Kapitanyuk, Murat Bronz, Gautier Hattenberger,
+  and Ming Cao.
+\newblock Guidance algorithm for smooth trajectory tracking of a fixed wing
+  {UAV} flying in wind flows.
+\newblock In {\em Robotics and {Automation} ({ICRA}), 2017 {IEEE}
+  {International} {Conference} on}, pages 5740--5745. IEEE, 2017.
+\newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/7989674/}
 
 \bibitem[EK02]{esposito_method_2002}
 Joel~M. Esposito and Vijay Kumar.
@@ -22,6 +38,24 @@ Joel~M. Esposito and Vijay Kumar.
 Eric Frew.
 \newblock Lyapunov {Guidance} {Vector} {Fields} for {Unmanned} {Aircraft}
   {Applications}.pdf.
+
+\bibitem[Fre07]{frew_cooperative_2007}
+Eric~W. Frew.
+\newblock Cooperative standoff tracking of uncertain moving targets using
+  active robot networks.
+\newblock In {\em Robotics and {Automation}, 2007 {IEEE} {International}
+  {Conference} on}, pages 3277--3282. IEEE, 2007.
+\newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/4209596/}
+
+\bibitem[GKM10]{goerzen_survey_2010}
+C.~Goerzen, Z.~Kong, and B.~Mettler.
+\newblock A {Survey} of {Motion} {Planning} {Algorithms} from the {Perspective}
+  of {Autonomous} {UAV} {Guidance}.
+\newblock {\em Journal of Intelligent and Robotic Systems}, 57(1-4):65--100,
+  January 2010.
+\newblock URL: \url{http://link.springer.com/10.1007/s10846-009-9383-1}, \href
+  {http://dx.doi.org/10.1007/s10846-009-9383-1}
+  {{doi:10.1007/s10846-009-9383-1}}
 
 \bibitem[GPM{\etalchar{+}}10]{goncalves_vector_2010}
 Vinícius~M. Gonçalves, Luciano~CA Pimenta, Carlos~A. Maia, Bruno~CO Dutra,
@@ -39,6 +73,20 @@ Vinicius~M. Goncalves, Luciano C.~A. Pimenta, Carlos~A. Maia, and Guilherme
 \newblock pages 2012--2017. IEEE, 2009.
 \newblock URL: \url{http://ieeexplore.ieee.org/document/5160350/}, \href
   {http://dx.doi.org/10.1109/ACC.2009.5160350} {{doi:10.1109/ACC.2009.5160350}}
+
+\bibitem[Gri06]{griffiths_vector_2006}
+Stephen Griffiths.
+\newblock Vector {Field} {Approach} for {Curved} {Path} {Following} for
+  {Miniature} {Aerial} {Vehicles}.
+\newblock American Institute of Aeronautics and Astronautics, August 2006.
+\newblock URL: \url{http://arc.aiaa.org/doi/10.2514/6.2006-6467}, \href
+  {http://dx.doi.org/10.2514/6.2006-6467} {{doi:10.2514/6.2006-6467}}
+
+\bibitem[KB91]{koren_potential_1991}
+Yoram Koren and Johann Borenstein.
+\newblock Potential {Field} {Methods} and their inherent limitions for morbile
+  robot navigation.pdf, 1991.
+\newblock URL: \url{http://ieeexplore.ieee.org/document/131810/}
 
 \bibitem[Kha86]{khatib_real-time_1986}
 Oussama Khatib.
@@ -66,6 +114,15 @@ Rabah Louali, Abdelhafid Elouardi, Samir Bouaziz, and Mohand~Saïd Djouadi.
 \newblock URL: \url{http://link.springer.com/10.1007/s10846-015-0323-y}, \href
   {http://dx.doi.org/10.1007/s10846-015-0323-y}
   {{doi:10.1007/s10846-015-0323-y}}
+
+\bibitem[MTE{\etalchar{+}}16]{miao_orthogonal_2016}
+Zhiqiang Miao, Divya Thakur, R.~Scott Erwin, Jean Pierre, Yaonan Wang, and
+  Rafael Fierro.
+\newblock Orthogonal vector field-based control for a multi-robot system
+  circumnavigating a moving target in 3d.
+\newblock In {\em Decision and {Control} ({CDC}), 2016 {IEEE} 55th {Conference}
+  on}, pages 6004--6009. IEEE, 2016.
+\newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/7799191/}
 
 \bibitem[Nel05]{nelson_cooperative_2005}
 Derek~R. Nelson.
