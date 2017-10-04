@@ -1,0 +1,277 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% This file provides a template that can be used in concert with the
+%% ohio-etd class to generate an electronic thesis or dissertation which
+%% meets the formatting requirements at Ohio University.
+%%
+%% To use the template, copy this file (template.tex) and ohio-etd.cls into
+%% the same directory and edit this template as required.  Reference
+%% ohio-etd.pdf for additional instructions on using this class.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Load the class.  Available options are: numbered, pdftex, cmfont,
+%% singlespacetables, draft, 11pt, 12pt, leqno, and fleqn
+
+\documentclass[numbered,pdftex]{ohio-etd}
+\usepackage{cite}
+\usepackage{notoccite}
+\usepackage{amsmath} % Inserting Equations
+\usepackage{ragged2e}
+\usepackage{verbatim} 
+\usepackage{hyperref}
+\usepackage{flafter}
+\usepackage{color,soul} % Highlighting 
+
+\usepackage{float} % In-text figs
+\usepackage{varioref}%  smart page, figure, table, and equation ref
+\usepackage{graphicx} % Include graphics
+\usepackage{epstopdf} % Figure type .eps to .pdf
+\usepackage{wrapfig} % Figures in text
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+%% Other packages that may be of use.  Delete or comment out (using a
+%% percent sign in the first column) if they are not desired.  Reference
+%% the corresponding documentation for more information on how to use these
+%% packages.
+
+%\usepackage[square,sort&compress,numbers]{natbib} % Provides formatting for
+                                                  % citations
+\usepackage{textcomp} % Provides math symbols that can be used in text mode
+\usepackage{amssymb}  % Provides additional AMS math symbols.  Note that
+                      % amsmath is loaded as part of the ohio-etd class
+\usepackage{bm}       % Provides bold-faced math symbols
+\usepackage{booktabs} % Provides improved table formatting
+\usepackage{dcolumn}  % Provides table columns aligned at decimal points
+\usepackage{multirow} % Provides table elements spanning multiple rows
+\usepackage{graphicx} % Standard package to incorporate graphics
+\usepackage[printonlyused]{acronym} % Provides a method for incorporating
+                                    % acronyms and building an acronym list
+
+\graphicspath{{figures/}} % Allows graphics files to be stored in a
+                          % separate directory
+\usepackage{fancyref}
+\usepackage{}
+
+%% Required front matter definitions
+
+\degree    {MS}              % MS, MA, MCTP, or PhD
+\graduation{December}{2017}    % May, August, or December 
+
+\title     {Modeling of Ground Effect Benefits for\\
+Multi-Rotor Small Unmanned Aerial Systems at Hover}
+\author    {Gina M.}{Eberhart} 
+
+\advisor   {Jay P. Wilhelm}{Assistant Professor of Mechanical Engineering}
+\dean      {Dennis Irwin}{Dean, Russ College of Engineering and Technology }
+\program   {Mechanical Engineering}            % e.g. Electrical Engineering
+\department{Department of Mechanical Engineering} % e.g. School of Electrical Engineering 
+                                    %      and Computer Science
+\college   {Russ College of Engineering and Technology}   % e.g. Russ College of Engineering and
+                                     %      Technology
+\abstract  {Small Unmanned Aerial Systems (sUAS) are gaining prevalence in both the public and private sectors. A proximity induced phenomenon that produces aerodynamic perturbations as a result of increased thrust production called Ground Effect (GE) poses a challenge to stable flight for aircraft flying close to the ground. GE has been previously examined for full-scale manned helicopters, but the effect upon multi-rotor Vertical Take-Off and Landing sUAS requires further investigation. Existing aerodynamic analysis methods such as Blade Element Momentum Theory (BEMT) have not considered GE. A Ground Effect modified BEMT power prediction method based around the modification of coefficient of thrust was developed herein. Thrust data for a multi-rotor sUAS propeller within GE at select power settings and distances was collected for comparison with the results of the GE BEMT thrust prediction developed. The thrust prediction method was adapted to model power requirements for multi-rotor sUAS at hover within GE. Finally, flight testing of a multi-rotor sUAS was conducted to evaluate the results of the GE BEMT model. The GE BEMT thrust prediction method was found to predict thrust with an average difference of 2.3\% from experimental thrust data. The experimental power requirement for the multi-rotor sUAS tested was reduced by more than 26\% within GE. The adaptable GE BEMT model developed was shown to predict power required for a multi-rotor sUAS vehicle at hover within GE.}
+
+
+%% Optional front matter definitions.  Delete or comment out if not needed
+
+% \coadvisor {Coadvisor's Full Name}{Coadvisor's Full Title}
+
+\dedication{To my parents}
+
+\acknowledgments{I would like to take this opportunity to thank all of the people that made this opportunity possible. First, I would like to thank my graduate advisor Dr. Jay Wilhelm for providing me with the opportunity to further my education and for his time, guidance, and the resources necessary to succeed. I would also like to thank my committee members Dr. Robert Williams, Dr. Jim Zhu, and Dr. Sergio Ulloa for their guidance and expert advice in shaping my research project. Thank you to the Russ College of Engineering and Technology for financial support throughout the duration of my graduate education.\\
+
+Thank you to family, Fred, Missy, Bruce, Philip, and Luna, for their unwavering support and encouragement throughout this process. I attribute my successes to their love, patience, and many sacrifices.\\
+
+Thank you to my friends and colleagues at Ohio University, Garrett Clem and Hunter Berthold, for both their technical and moral support throughout the duration of my research exploits, I am so incredibly grateful to have had the opportunity to have worked with you both.\\ 
+
+Finally, thank you to my friends and colleagues at West Virginia University for their continued support throughout my educational and professional career.}
+%% If you prefer to provide "acknowledgements" instead (note the added "e"
+%% between the "g" and the "m") then add the "e" in the macro name so that
+%% it reads "\acknowledgements".}
+
+%% Additional "lists" can be added to the end of the front matter using the
+%% \addlistof macro.  For example:
+\addlistof{Symbols}{\begin{tabbing}
+  XXXX \= \kill% this line sets tab stop
+  \\
+  $a$ \> Previous or Initial Axial Induction Factor (-) \\
+  $A$ \> Rotor Disk Area ($m^2$) \\
+  $a_{new}$ \> Current Axial Induction Factor (-) \\
+  $b$ \> Tangential Induction Factor (-) \\
+  $b_{new}$ \> Current Tangential Induction Factor (-) \\
+  $c$ \> Chord (m) \\ 
+  $c_d$ \> Coefficient of Drag (-) \\
+  $c_l$ \> Coefficient of Lift (-) \\
+  $c_{p_r}$ \> Coefficient of Power Required (W) \\
+  $c_t$ \> Coefficient of Thrust (-) \\
+  $c_{t_{r}}$ \> Coefficient of Thrust Ratio (-) \\
+  $c_{t}(z)$ \> Coefficient of Thrust with Modification for GE (-) \\
+  $c_q$ \> Coefficient of Torque (-) \\
+  $c_{q_r}$ \> Coefficient of Torque (-) \\
+  $D$ \> Rotor Diameter (m) \\
+  $dD$ \> Differential Drag from Blade Element Theory (N) \\
+  $dL$ \> Differential Lift from Blade Element Theory (N) \\
+  $dr$ \> Size of Span-Wise Element (m) \\
+  $dT_b$ \>Differential Thrust from Blade Element Theory (N) \\
+  $dT_m$ \>Differential Thrust from Momentum Theory (N) \\
+  $dT_n$ \> Span-Wise Element Thrust (N) \\
+  $dQ_b$ \> Differential Torque from Blade Element Theory (N-m) \\
+  $dQ_m$ \> Differential Torque from Momentum  Theory (N-m) \\
+  $dQ_n$ \> Span-Wise Element Torque (N-m) \\
+  $g$ \> Acceleration Due to Gravity ($m/s^2$) \\
+  $k$ \>Induced Power Variation Inside Ground Effect (-)  \\
+  $k_\infty$ \> Induced Power Variation Outside Ground Effect (-) \\
+  $L$ \> Characteristic Length of Object (m) \\
+  $m$ \> Mass of Vehicle (kg) \\
+  $\dot{m}$ \> Mass Flow Rate of Air in Slip Stream (kg/s) \\
+  $N$ \> Number of Elements (-) \\
+  $N_b$ \> Number of Propeller Blades (-) \\
+  $N_P$ \> Number of Propellers (-) \\
+  $P$ \> Power (W) \\
+  $P_d$ \> Dynamic Pressure (kPa) \\
+  $P_{IGE}$ \> Power Inside Ground Effect (W) \\
+  $P_{OGE}$ \> Power Onside Ground Effect (W) \\
+  $P_{SP}$ \> Total Power Required for Single Propeller (W) \\
+  $P_{TR}$ \> Total Power Required (W) \\
+  $Q$ \> Total Torque (N-m) \\
+  $Q_R$ \> Torque Required (N-m) \\
+  $r$ \> Radial Distance of Element from Hub (m) \\
+  $R$ \> Rotor Radius (m) \\
+  $R_{e_L}$ \> Reynolds Number (-) \\
+  $T$ \> Total Thrust (N) \\
+  $TI$ \> Turbulence Intensity (-) \\
+  $T_{IGE}$ \> Thrust Inside Ground Effect (N) \\
+  $T_{OGE}$ \> Thrust Outside Ground Effect (N) \\
+  $T_{RH}$ \> Thrust Required to Hover (N) \\
+  $TSR$ \> Tip Speed Ratio (-) \\
+  $T_{SP}$ \> Thrust Required from Single Propeller(N) \\
+  $\bar{U}$ \> Average of Time Series Flow Velocity (m/s) \\
+  $V$ \> Air Velocity (m/s)\\
+  $V_0$ \> Axial Induced Velocity Component (m/s) \\
+  $V_2$ \> Tangential Induced Velocity Component (m/s) \\
+  $V_\infty$ \> Axial Slip Stream Velocity (m/s) \\
+  $V_{OUT}$ \> Voltage Output (V) \\
+  $V_i$ \> Induced Velocity (m/s) \\
+  $V_{loc}$ \> Local Induced Velocity (m/s) \\
+  $V_r$ \> Tangential Slip Stream Velocity (m/s) \\
+  $V_S$ \> Voltage Supplied (V) \\
+  $w$ \> Slip Stream Velocity Far Beneath Rotor (m/s) \\
+  $W$ \> Vehicle Weight (N) \\
+  $z$ \>  Vertical Height of Propeller from Ground (m) \\[5pt]\\
+  $\alpha$ \> Angle of Attack (rad) \\
+  $\epsilon_a$ \> Axial Induction Factor Error (-) \\
+  $\epsilon_b$ \> Tangential Induction Factor Error (-) \\
+  $\eta_m$ \> Motor Efficiency (-) \\
+  $\theta$ \> Pitch (rad) \\
+  $\lambda_i$ \> Inflow Ratio (-)\\
+  $\mu$ \> Advance Ratio (-) \\
+  $\mu_\infty$ \> Viscosity of Fluid ($m^2/s$) \\
+  $\rho$ \> Air Density $(kg/m^3)$ \\
+  $\rho_\infty$ \> Free-Stream Air Density $(kg/m^3)$ \\
+  $\sigma$ \> Standard Deviation of Time Series Flow Velocity (m/s) \\
+  $\phi$ \> Inflow Angle (rad) \\
+  $\Omega$ \> Propeller Rotational Speed (rad/s) \\
+  $\Omega_R$ \> Propeller Rotational Speed  Required(rad/s) \\
+
+  
+ 
+ 
+ \end{tabbing}}
+%% Note that the command "\input{symbols}" can be used if the symbol list is
+%% contained in a separate file called "symbols.tex"}
+
+\addlistof{Acronyms}{
+
+\begin{tabular}{lll}
+AoA & Angle of Attack & \\
+BEMT& Blade Element Momentum Theory & \\
+BET & Blade Element Theory & \\
+CW& Clockwise & \\
+CCW & Counter-Clockwise & \\
+DAQ & Data Acquisition & \\
+ESC & Electronic Speed Controller & \\
+GE  & Ground Effect & \\
+IGE & Inside Ground Effect & \\
+IMU & Inertial Measurement Unit & \\
+Li-Po & Lithium-Polymer& \\
+LPE & Local Position Estimate & \\
+MAV & Micro Air Vehicle & \\
+MT  & Momentum Theory & \\
+NI& National Instruments & \\
+OGE & Outside Ground Effect & \\
+PWM & Pulse-Width Modulation & \\
+sUAS& Small Unmanned Aerial System & \\
+TSR& Tip Speed Ratio& \\
+UAS & Unmanned Aerial System & \\
+VTOL & Vertical Take-off and Landing & \\
+\end{tabular}}
+
+
+%% Use "\input{acronyms}" if the acronym list is in a separate file called
+%% "acronyms.tex".  Note that the formatting generated by the acronym package
+%% can be forced into singlespaced text by inserting "\setlength\itemsep{0pt}
+%% \setlength\parskip{0pt}" into the "acronym" environment.} 
+
+%% For documents created by government employees as part of their
+%% employment.  The wording of the disclaimer can be specified using an
+%% option.  See the documentation for more information.
+
+% \govtdisclaimer    
+
+% \notables  % Prevent a list of tables from being created
+% \nofigures % Prevent a list of figures from being created
+
+\begin{document}
+
+\makefrontmatter    % Creates all of the front matter pages.
+
+% for matlab code entrys
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+%     numbers=left,%
+%     numberstyle={\tiny \color{black}},% size of the numbers
+%     numbersep=6pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+%% Body of the text follows, using \chapter, \section, \subsection,
+%% \subsubsection, \paragraph, and \subparagraph to generate the
+%% section headings.  For convenience, it may be useful to break the
+%% full document into separate files, perhaps divided by chapters.  In
+%% that case, the files would be loaded here using "\input{filename}"
+
+
+\chapter{Introduction}
+\section{Motivation and Problem Statement}
+
+%%UAVs commercially available, ease of use, inexpensive, open source community, wells supported
+%- Unmanned Aerial Vehicles (UAVs) are a powerful robotics tool for military and civilian communities alike
+%- Advances in lightweight materials and commercial electronics have increased the payload, range, and overall capability of the crafts
+%- Reduced costs have brought the technology to a wide range of communities which have found uses such as surveillance, reconnaissance, aerial photography, delivery, and for defense.
+%- As the complexity of tasks increase, the complexity of guidance and control systems increase as well. 
+%- Traditionally, guidance and control laws have been separate systems responsible for independent tasks
+%- Potential field and vector field methods have blurred the line between the guidance and control systems where they have shared the burden of more complex tasks such as obstacle avoidance and path following
+%- Potential field has been effective for obstacle avoidance and goal seeking
+%- Fixed wing UAVs have a stall velocity constraint and can not stop at a given point
+%- Vector field methods have been effective at providing guidance and control for fixed wing UAVs for converging to and following a path
+%- Vector fields can be generated in a number of ways, however a convenient method first introduced in \cite{goncalves_artificial_2009} constructs the field by calculating the integral lines converging to and following the level sets of intersecting surfaces. The intersection of surfaces gauntnesses convergence and provides a scalar multiplication factor for convergence, circulation, and time-varying components of the field. 
+
+Unmanned Aerial Vehicles (UAVs) are powerful robotics tools used by both military and civilian communities alike. Advances in lightweight materials and commercial electronics have increase the range, payload, and reliability of the crafts. Reduced costs have brought the technology to a wide range of communities which have found uses such as surveillance, reconnaissance, and aerial photography to name a few. As the complexity of the tasks increase, the complexity of the guidance and control systems increase as well. Traditionally, guidance and control laws have been regarded as separate systems responsible for independent tasks. Potential field and vector field methods have blurred the line between guidance and control systems, whereas now they have shared the burden of complex tasks such as obstacle avoidance and path following. Potential field has been effective for obstacle avoidance and goal seeking for a singular discrete point, however is not initially intended to be used for tasks such as path following. Vector field methods have been effective at providing guidance and control for fixed wing UAVs for converging to and following a path. Vector fields can be constructed in a number of ways, however a convenient method first introduced in  constructs a field by summing together three components consisting of convergence, circulation, and time varying. The filed is generated by calculating the integral lines converging to and following the level sets of intersecting arbitrary surfaces in n-dimensions. Unlike potential field, vector fields do not take into account the dynamics of a vehicle being provided the guidance which provides no guarantee that the UAV will avoid obstacles. Improving the guidance provided by the vector field for obstacle avoidance may be possible by modifying the circulation term of a vector field as a function of a vehicles state with respect to the obstacle.
+
+
+
+
+
+\end{document}

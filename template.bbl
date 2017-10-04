@@ -16,6 +16,14 @@ Johann Borenstein and Yoram Koren.
   1991.
 \newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/88137/}
 
+\bibitem[CCA09]{chen_tracking_2009}
+Hongda Chen, KuoChu Chang, and Craig~S. Agate.
+\newblock Tracking with {UAV} using tangent-plus-{Lyapunov} vector field
+  guidance.
+\newblock In {\em Information {Fusion}, 2009. {FUSION}'09. 12th {International}
+  {Conference} on}, pages 363--372. IEEE, 2009.
+\newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/5203870/}
+
 \bibitem[dMKB{\etalchar{+}}17]{de_marina_guidance_2017}
 Hector~Garcia de~Marina, Yuri~A. Kapitanyuk, Murat Bronz, Gautier Hattenberger,
   and Ming Cao.
@@ -24,15 +32,6 @@ Hector~Garcia de~Marina, Yuri~A. Kapitanyuk, Murat Bronz, Gautier Hattenberger,
 \newblock In {\em Robotics and {Automation} ({ICRA}), 2017 {IEEE}
   {International} {Conference} on}, pages 5740--5745. IEEE, 2017.
 \newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/7989674/}
-
-\bibitem[EK02]{esposito_method_2002}
-Joel~M. Esposito and Vijay Kumar.
-\newblock A method for modifying closed-loop motion plans to satisfy
-  unpredictable dynamic constraints at runtime.
-\newblock In {\em Robotics and {Automation}, 2002. {Proceedings}. {ICRA}'02.
-  {IEEE} {International} {Conference} on}, volume~2, pages 1691--1696. IEEE,
-  2002.
-\newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/1014785/}
 
 \bibitem[Fre]{frew_lyapunov_nodate}
 Eric Frew.
@@ -57,14 +56,6 @@ C.~Goerzen, Z.~Kong, and B.~Mettler.
   {http://dx.doi.org/10.1007/s10846-009-9383-1}
   {{doi:10.1007/s10846-009-9383-1}}
 
-\bibitem[GPM{\etalchar{+}}10]{goncalves_vector_2010}
-Vinícius~M. Gonçalves, Luciano~CA Pimenta, Carlos~A. Maia, Bruno~CO Dutra,
-  and Guilherme~AS Pereira.
-\newblock Vector fields for robot navigation along time-varying curves in \$ n
-  \$-dimensions.
-\newblock {\em IEEE Transactions on Robotics}, 26(4):647--659, 2010.
-\newblock URL: \url{http://ieeexplore.ieee.org/abstract/document/5504176/}
-
 \bibitem[GPMP09]{goncalves_artificial_2009}
 Vinicius~M. Goncalves, Luciano C.~A. Pimenta, Carlos~A. Maia, and Guilherme
   A.~S. Pereira.
@@ -82,6 +73,16 @@ Stephen Griffiths.
 \newblock URL: \url{http://arc.aiaa.org/doi/10.2514/6.2006-6467}, \href
   {http://dx.doi.org/10.2514/6.2006-6467} {{doi:10.2514/6.2006-6467}}
 
+\bibitem[JLLB16]{jung_unmanned_2016}
+Wooyoung Jung, Seunghan Lim, Dongjin Lee, and Hyochoong Bang.
+\newblock Unmanned {Aircraft} {Vector} {Field} {Path} {Following} with
+  {Arrival} {Angle} {Control}.
+\newblock {\em Journal of Intelligent \& Robotic Systems}, 84(1-4):311--325,
+  December 2016.
+\newblock URL: \url{http://link.springer.com/10.1007/s10846-016-0332-5}, \href
+  {http://dx.doi.org/10.1007/s10846-016-0332-5}
+  {{doi:10.1007/s10846-016-0332-5}}
+
 \bibitem[KB91]{koren_potential_1991}
 Yoram Koren and Johann Borenstein.
 \newblock Potential {Field} {Methods} and their inherent limitions for morbile
@@ -96,24 +97,15 @@ Oussama Khatib.
 \newblock URL:
   \url{http://journals.sagepub.com/doi/abs/10.1177/027836498600500106}
 
-\bibitem[LDN{\etalchar{+}}14]{louali_designing_2014}
-Rabah Louali, Mohand~Said Djouadi, Abdelkrim Nemra, Samir Bouaziz, and
-  Abdelhafid Elouardi.
-\newblock Designing embedded systems for fixed-wing {UAVs}: {Dynamic} models
-  study for the choice of an emulation vehicle.
-\newblock pages 1--6. IEEE, February 2014.
-\newblock URL: \url{http://ieeexplore.ieee.org/document/6808827/}, \href
-  {http://dx.doi.org/10.1109/SSD.2014.6808827} {{doi:10.1109/SSD.2014.6808827}}
-
-\bibitem[LEBD16]{louali_experimental_2016}
-Rabah Louali, Abdelhafid Elouardi, Samir Bouaziz, and Mohand~Saïd Djouadi.
-\newblock Experimental {Approach} for {Evaluating} an {UAV} {COTS}-{Based}
-  {Embedded} {Sensors} {System}.
-\newblock {\em Journal of Intelligent \& Robotic Systems}, 83(2):289--313,
-  August 2016.
-\newblock URL: \url{http://link.springer.com/10.1007/s10846-015-0323-y}, \href
-  {http://dx.doi.org/10.1007/s10846-015-0323-y}
-  {{doi:10.1007/s10846-015-0323-y}}
+\bibitem[LJ17]{liang_tangent_2017}
+Yueqian Liang and Yingmin Jia.
+\newblock Tangent vector field approach for curved path following with input
+  saturation.
+\newblock {\em Systems \& Control Letters}, 104:49--58, June 2017.
+\newblock URL:
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0167691117300671}, \href
+  {http://dx.doi.org/10.1016/j.sysconle.2017.04.001}
+  {{doi:10.1016/j.sysconle.2017.04.001}}
 
 \bibitem[MTE{\etalchar{+}}16]{miao_orthogonal_2016}
 Zhiqiang Miao, Divya Thakur, R.~Scott Erwin, Jean Pierre, Yaonan Wang, and
@@ -137,25 +129,5 @@ Tiago Oliveira, A.~Pedro Aguiar, and Pedro Encarnacao.
 \newblock {\em IEEE Transactions on Robotics}, 32(5):1062--1078, October 2016.
 \newblock URL: \url{http://ieeexplore.ieee.org/document/7553466/}, \href
   {http://dx.doi.org/10.1109/TRO.2016.2593044} {{doi:10.1109/TRO.2016.2593044}}
-
-\bibitem[RMSB07]{ren_experimental_2007}
-W.~Ren, T.~McLain, J.-S. Sun, and R.~Beard.
-\newblock Experimental validation of an autonomous control system on a mobile
-  robot platform.
-\newblock {\em IET Control Theory \& Applications}, 1(6):1621--1629, November
-  2007.
-\newblock URL:
-  \url{http://digital-library.theiet.org/content/journals/10.1049/iet-cta_20070017},
-  \href {http://dx.doi.org/10.1049/iet-cta:20070017}
-  {{doi:10.1049/iet-cta:20070017}}
-
-\bibitem[SSS14]{sujit_unmanned_2014}
-P.B. Sujit, Srikanth Saripalli, and Joao~Borges Sousa.
-\newblock Unmanned {Aerial} {Vehicle} {Path} {Following}: {A} {Survey} and
-  {Analysis} of {Algorithms} for {Fixed}-{Wing} {Unmanned} {Aerial}
-  {Vehicless}.
-\newblock {\em IEEE Control Systems}, 34(1):42--59, February 2014.
-\newblock URL: \url{http://ieeexplore.ieee.org/document/6712082/}, \href
-  {http://dx.doi.org/10.1109/MCS.2013.2287568} {{doi:10.1109/MCS.2013.2287568}}
 
 \end{thebibliography}
