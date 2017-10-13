@@ -470,11 +470,12 @@ Thesis and Dissertation Class]
 \def\@tooneline{\expandafter\@stripbreaks\@title\\\@last\@end}
 \let\@titleoneline=\@tooneline
 \renewcommand\abstract[1]{
-  \newcommand\@abstract{
+  \newcommand\@abstract{  \justify
     \@schaptertoc{Abstract}
     \begingroup
       \@dsp
       \begingroup
+    
         \raggedright
         \MakeUppercase\@authorreversed,
         \@degreeabbr, \@gradmonth\ \@gradyear, \@program\\
@@ -851,7 +852,8 @@ Thesis and Dissertation Class]
 
 \pagestyle{headings}
 \raggedright
-\setlength\parindent{2em} % must follow the \raggedright or will be reset to 0
+% \setlength\parindent{2em} 
+\setlength\parindent{0.5 in} % must follow the \raggedright or will be reset to 0
 \pretolerance=2000  
 \clubpenalty =10000  
 \widowpenalty=10000 

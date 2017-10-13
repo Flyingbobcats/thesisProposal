@@ -1,9 +1,31 @@
 \contentsline {chapter}{Abstract}{3}{schapter.1}
 \contentsline {chapter}{Dedication}{4}{schapter.2}
 \contentsline {chapter}{Acknowledgments}{5}{schapter.3}
-\contentsline {chapter}{List of Tables}{7}{schapter.4}
-\contentsline {chapter}{List of Figures}{8}{schapter.5}
-\contentsline {chapter}{List of Symbols}{9}{schapter.6}
+\contentsline {chapter}{List of Tables}{8}{schapter.4}
+\contentsline {chapter}{List of Figures}{9}{schapter.5}
+\contentsline {chapter}{List of Symbols}{10}{schapter.6}
 \contentsline {chapter}{List of Acronyms}{11}{schapter.7}
 \contentsline {chapter}{\numberline {1}Introduction}{12}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation and Problem Statement}{12}{section.1.1}
+\contentsline {chapter}{\numberline {2}Introduction}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Motivation and Problem Statement}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Methods Overview}{14}{section.2.2}
+\contentsline {section}{\numberline {2.3}Phases}{14}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Phase I}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Phase II}{14}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Phase III}{15}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Summary of Objectives}{15}{section.2.4}
+\contentsline {chapter}{\numberline {3}Literature Review}{16}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction to Literature Review}{16}{section.3.1}
+\contentsline {section}{\numberline {3.2}Fixed Wing Unmanned Aerial Vehicle}{16}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Introduction to Fixed Wing UAV}{16}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Modeling}{16}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Autopilot}{18}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Navigation, Guidance and Control}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Introduction to NGC}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Navigation}{20}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Guidance and Control}{21}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Potential Field}{21}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Vector Field}{22}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}Literature Review Summary}{26}{section.3.4}
+\contentsline {chapter}{References}{27}{schapter.8}

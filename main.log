@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  4 OCT 2017 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  4 OCT 2017 17:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -833,53 +833,53 @@ Package: fancyref 1999/02/03 v0.9c Fancy cross-referencing
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 227.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 227
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 125.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 125
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\omltxmi.fd"
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 227.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 227
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 125.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 125
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\omstxsy.fd"
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 227.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 227
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 125.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 125
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\omxtxex.fd"
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 227.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 227.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 125.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 125.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\utxexa.fd"
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 227.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 227.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 125.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 125.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 227.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 125.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\ot1txr.fd"
@@ -887,9 +887,9 @@ File: ot1txr.fd 2000/12/15 v3.1
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 227.
+(lastpage)             ! on input line 125.
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring ON on input line 227.
+Package hyperref Info: Link coloring ON on input line 125.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -900,17 +900,17 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 \c@section@level=\count133
 LaTeX Info: Redefining \Ref on input line 515.
 )
-LaTeX Info: Redefining \ref on input line 227.
-LaTeX Info: Redefining \pageref on input line 227.
-LaTeX Info: Redefining \nameref on input line 227.
+LaTeX Info: Redefining \ref on input line 125.
+LaTeX Info: Redefining \pageref on input line 125.
+LaTeX Info: Redefining \nameref on input line 125.
 
 (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Info: Redefining \Ref on input line 227.
+LaTeX Info: Redefining \Ref on input line 125.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 227.
+LaTeX Info: Redefining \selectfont on input line 125.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -927,14 +927,9 @@ LaTeX Info: Redefining \selectfont on input line 227.
 \everyMPtoPDFconversion=\toks40
 )
 \c@lstlisting=\count140
+LaTeX Font Info:    Try loading font information for TS1+txr on input line 127.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 229.
-
-LaTeX Font Info:    Try loading font information for TS1+txr on input line 229.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\ts1txr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\ts1txr.fd"
 File: ts1txr.fd 2000/12/15 v3.1
 ) [1
 
@@ -964,68 +959,189 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 1.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\txfonts\utxsyc.fd"
 File: utxsyc.fd 2000/12/15 v3.1
-))
+) [6
+
+
+])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [6
-
-
-] (main.lot)
+ [7] (main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
-
-[7
+[8
 
 ] (main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [8
+ [9
 
-] [9
+] [10
 
-] [10]
+]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) [11
 
 ]
 Chapter 1.
-
-AED: lastpage setting LastPage
 [12
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 277.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 277.
+Chapter 2.
+[13
+
+] [14] [15]
+Chapter 3.
+<PaperFigures/fixedwing.jpg, id=219, 903.375pt x 602.25pt>
+File: PaperFigures/fixedwing.jpg Graphic file (type jpg)
+
+<use PaperFigures/fixedwing.jpg>
+Package pdftex.def Info: PaperFigures/fixedwing.jpg used on input line 229.
+(pdftex.def)             Requested size: 303.53267pt x 202.35461pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16
+
+] <PaperFigures/pitchrollyaw.png, id=224, 295.1025pt x 210.03468pt>
+File: PaperFigures/pitchrollyaw.png Graphic file (type png)
+
+<use PaperFigures/pitchrollyaw.png>
+Package pdftex.def Info: PaperFigures/pitchrollyaw.png used on input line 242.
+(pdftex.def)             Requested size: 303.53267pt x 216.04008pt.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.248 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.248 
+       <./PaperFigures/fixedwing.jpg> <./PaperFigures/pitchrollyaw.png>]
+[18] <PaperFigures/pixhawk.jpg, id=253, 903.375pt x 903.375pt>
+File: PaperFigures/pixhawk.jpg Graphic file (type jpg)
+
+<use PaperFigures/pixhawk.jpg>
+Package pdftex.def Info: PaperFigures/pixhawk.jpg used on input line 275.
+(pdftex.def)             Requested size: 303.53267pt x 303.53194pt.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.284 
+       <./PaperFigures/pixhawk.jpg>] [20] [21] [22]
+<PaperFigures/convergence.png, id=296, 421.575pt x 316.18124pt>
+File: PaperFigures/convergence.png Graphic file (type png)
+
+<use PaperFigures/convergence.png>
+Package pdftex.def Info: PaperFigures/convergence.png used on input line 386.
+(pdftex.def)             Requested size: 303.53267pt x 227.65514pt.
+ [23]
+<PaperFigures/circulation.png, id=306, 421.575pt x 316.18124pt>
+File: PaperFigures/circulation.png Graphic file (type png)
+
+<use PaperFigures/circulation.png>
+Package pdftex.def Info: PaperFigures/circulation.png used on input line 394.
+(pdftex.def)             Requested size: 303.53267pt x 227.65514pt.
+
+<"PaperFigures/time varying".png, id=307, 421.575pt x 316.18124pt>
+File: "PaperFigures/time varying".png Graphic file (type png)
+
+<use "PaperFigures/time varying".png>
+Package pdftex.def Info: "PaperFigures/time varying".png used on input line 401
+.
+(pdftex.def)             Requested size: 303.53267pt x 227.65514pt.
+ [24pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.404 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.3.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.404 \end{figure}
+                   <./PaperFigures/convergence.png (PNG copy)> <./PaperFigures/
+circulation.png (PNG copy)>]
+<PaperFigures/total.png, id=312, 421.575pt x 316.18124pt>
+File: PaperFigures/total.png Graphic file (type png)
+
+<use PaperFigures/total.png>
+Package pdftex.def Info: PaperFigures/total.png used on input line 409.
+(pdftex.def)             Requested size: 303.53267pt x 227.65514pt.
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.417 	\item L
+              yapunov vector field generation for a circular loiterpdfTeX warni
+ng (ext4): destination with the same identifier (name{figure.3.7}) has been alr
+eady used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.417 	\item L
+              yapunov vector field generation for a circular loiter <./PaperFig
+ures/time varying.png (PNG copy)> <./PaperFigures/total.png (PNG copy)>]
+(main.bbl [26] [27
+
+]
+Underfull \hbox (badness 1527) in paragraph at lines 101--109
+[]\OT1/txr/m/n/12 Yueqian Liang and Yingmin Jia.  Tangent vector field approach
+ for
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 126--132
+\OT1/txr/m/n/12 Following for Unmanned Aerial Vehicles With Applications to Sin
+gle
+ []
+
+) 
+AED: lastpage setting LastPage
+[28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 452.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 452.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 277.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 277.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 452.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 452.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AF18DEC6FD81B5924A6D847DBBCFA62C;529.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 277.
+(rerunfilecheck)             Checksum: 69A76BC975C7E39632CFB52D609697D0;1263.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 452.
  ) 
 Here is how much of TeX's memory you used:
- 9857 strings out of 493320
- 140135 string characters out of 3138948
- 260263 words of memory out of 3000000
- 13160 multiletter control sequences out of 15000+200000
- 32088 words of font info for 79 fonts, out of 3000000 for 9000
+ 10044 strings out of 493320
+ 143477 string characters out of 3138948
+ 259146 words of memory out of 3000000
+ 13264 multiletter control sequences out of 15000+200000
+ 32049 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,6n,40p,1930b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,6n,40p,1989b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/txfonts/rtcxr.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/txfonts/rtxbsc.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/txfonts/rtxmi.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/rt
-xr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on main.pdf (12 pages, 80237 bytes).
+ic/txfonts/rtxi.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/rtx
+mi.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
+tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (28 pages, 564005 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 415 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
+ 204 words of extra memory for PDF output out of 10000 (max. 10000000)
 

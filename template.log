@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  4 OCT 2017 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  4 OCT 2017 15:58
 entering extended mode
 **./template.tex
 (template.tex
@@ -840,7 +840,19 @@ LaTeX Font Info:    Try loading font information for TS1+txr on input line 97.
 File: ts1txr.fd 2000/12/15 v3.1
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+! Undefined control sequence.
+\@abstract -> \justify 
+                       \@schaptertoc {Abstract} \begingroup \@dsp \begingrou...
+l.97 \makefrontmatter
+                         % Creates all of the front matter pages.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[2] [3
 
 ] [4
 
@@ -976,10 +988,10 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 800.
  ) 
 Here is how much of TeX's memory you used:
- 8580 strings out of 493320
- 120929 string characters out of 3138948
- 207017 words of memory out of 3000000
- 11845 multiletter control sequences out of 15000+200000
+ 8581 strings out of 493320
+ 120936 string characters out of 3138948
+ 207021 words of memory out of 3000000
+ 11846 multiletter control sequences out of 15000+200000
  32049 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,6n,28p,1993b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -993,7 +1005,7 @@ TeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (28 pages, 560206 bytes).
+Output written on template.pdf (28 pages, 560281 bytes).
 PDF statistics:
  412 PDF objects out of 1000 (max. 8388607)
  98 named destinations out of 1000 (max. 500000)
